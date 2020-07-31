@@ -235,6 +235,12 @@ def user_stats(df, city):
         for i in range(len(users_count)):
             print(indices[i],':', users_count['Unnamed: 0'][i])
     else:
+        cities_with_gender(df)
+
+
+    #The user stats function were broken into two functions based on the availablity of data in excel sheets
+    
+def cities_with_gender(df):
         df_d = pd.DataFrame(df[['User Type', 'Unnamed: 0', 'Gender', 'Birth Year']])
     # Display counts of user types
         users_count = df_d.groupby(['User Type'])['Unnamed: 0'].count().groupby(level=0).tail(2)
