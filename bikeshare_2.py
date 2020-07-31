@@ -3,6 +3,7 @@ from datetime import datetime as dt
 import pandas as pd
 import numpy as np
 
+#but now I realized that git is actuall pretty efficient
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
